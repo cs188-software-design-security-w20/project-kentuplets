@@ -1,0 +1,24 @@
+@import './utilities/bootstrap.min.css';
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+body::after {
+  content: '';
+  display: block;
+  height: 100px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.app { width: 100%;}
+.app-header { color: black; text-align: center; background: white; width: 100%; margin: 20px 0 5px 0; padding: 0em 0 3em 0; }

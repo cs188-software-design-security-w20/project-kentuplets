@@ -1,0 +1,2 @@
+The files in here are from our backend. They aren't compiled from here and there are no references to them from other files. They are accessed by our App API call 
+and used for setting up a payment INTENT (not the processed payment) and for associating a user to their stripe accound respectively. 

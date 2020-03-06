@@ -1,0 +1,46 @@
+.custom-radio-btn {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 2rem;
+  user-select: none;
+}
+.custom-radio-btn__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.custom-radio-btn__span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #eee;
+  border-radius: 12px;
+  transform: translateY(-50%);
+}
+.custom-radio-btn__span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  content: "";
+  display: none;
+}
+.custom-radio-btn__input:checked ~ .custom-radio-btn__span::after {
+  display: block;
+}
+.custom-radio-btn:hover .custom-radio-btn__span {
+  background-color: #dfdfdf;
+}
+.text-remove-selected {
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+  padding-left: 2rem;
+}
